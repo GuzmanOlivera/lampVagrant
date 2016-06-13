@@ -48,5 +48,8 @@ cp /vagrant/provision/sshd_config /etc/ssh/
 #### DNS ####
 cp -rpP $ORIGEN/hosts_datos /etc/hosts
 
+### Configuracion SSH ###
+cp -rpP /vagrant/provision/sshd_config /etc/ssh/
+/etc/init.d/ssh restart
 
 
